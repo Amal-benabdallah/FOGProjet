@@ -146,12 +146,14 @@ public class MainActivity extends AppCompatActivity {
 
         }).start();
 
+    }*/
+
+
+
+   public void openMapActivity(View view) {
+        Intent intent = new Intent(this, MapActivity.class);
+        //intent.putExtra("latitude", latitudeRef.get());
+        //intent.putExtra("longitude", longitudeRef.get());
+        startActivity(intent);
     }
-
-
-
-    public void openMapActivity(View view, double latitude, double longitude) {
-    Intent intent = new Intent(this, MapActivity.class);
-    intent.putExtra("latitude", latitudeRef.get());
-    intent.putExtra("longitude", longitudeRef.get());*/
 }
